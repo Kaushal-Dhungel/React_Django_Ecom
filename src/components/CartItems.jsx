@@ -21,7 +21,7 @@ const CartItems = ({total_items,total_amount,token,isAuthenticated,fetchDataNav}
     useEffect( () => {
       const fetchData = async () => {
           try {
-              const res = await axios.get('http://reactshopee.herokuapp.com/cartitems/',{
+              const res = await axios.get('https://reactshopee.herokuapp.com/cartitems/',{
                 headers: {
                         "Content-Type" : "application/json",
                         Authorization : `Token ${token}`
@@ -57,7 +57,7 @@ const CartItems = ({total_items,total_amount,token,isAuthenticated,fetchDataNav}
           const sendData = async () => {
             let abc = ''
               try {
-                  const res = await axios.post('http://reactshopee.herokuapp.com/cartitems/',{action,id},config);
+                  const res = await axios.post('https://reactshopee.herokuapp.com/cartitems/',{action,id},config);
                   abc = res.data;
                   console.log(abc)
                   fetchDataNav(token)

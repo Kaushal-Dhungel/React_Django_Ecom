@@ -13,10 +13,10 @@ const Category = () => {
 
     useEffect( ()=> {
         const fetchItems = async () => {
-            let url = `http://reactshopee.herokuapp.com/shop/${cat}/`; 
+            let url = `https://reactshopee.herokuapp.com/shop/${cat}/`; 
 
             if(cat === 'all')
-                   url =  'http://reactshopee.herokuapp.com/products/';
+                   url =  'https://reactshopee.herokuapp.com/products/';
 
             try {
                 const res = await axios.get(url);  

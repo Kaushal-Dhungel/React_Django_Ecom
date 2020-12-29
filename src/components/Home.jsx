@@ -40,7 +40,7 @@ export const Items = ({token,isAuthenticated,updateCart}) => {
 
         const fetchItems = async () => {
             try {
-                const res = await axios.get('http://reactshopee.herokuapp.com/products/');
+                const res = await axios.get('https://reactshopee.herokuapp.com/products/');
                 console.log(res.data)
                 setItems(res.data);
 
@@ -116,7 +116,7 @@ const Testi = () => {
         const fetchItems = async () => {
 
             try {
-                const res = await axios.get('http://reactshopee.herokuapp.com/recom/');
+                const res = await axios.get('https://reactshopee.herokuapp.com/recom/');
                 // console.log(res.data)
                 setReco(res.data);
 

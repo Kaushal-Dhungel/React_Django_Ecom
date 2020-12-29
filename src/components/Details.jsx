@@ -18,7 +18,7 @@ const PostDetail = (props) => {
     useEffect( () => {
         const fetchItem = async () => {
             try {
-                const res = await axios.get(`http://reactshopee.herokuapp.com/products/${slug}/`);
+                const res = await axios.get(`https://reactshopee.herokuapp.com/products/${slug}/`);
                 console.log(res.data)
                 setItem(res.data);
 
@@ -34,7 +34,7 @@ const PostDetail = (props) => {
         // const slug = props.match.params.id 
         const fetchComment = async () => {
             try {
-                const res = await axios.get(`http://reactshopee.herokuapp.com/comment/`,{
+                const res = await axios.get(`https://reactshopee.herokuapp.com/comment/`,{
                     params: {
                       id : item.id
                     }
@@ -73,7 +73,7 @@ const PostDetail = (props) => {
         }
         }
 
-        axios.post('http://reactshopee.herokuapp.com/comment/', data,config)
+        axios.post('https://reactshopee.herokuapp.com/comment/', data,config)
 
         .then (response => {console.log("done")
                 console.log(response.data)

@@ -57,7 +57,7 @@ export const update_cart = (e)=> {
   };
   const sendData = async () => {
       try {
-          const res = await axios.post('http://reactshopee.herokuapp.com/cartitems/',{action,id},config);
+          const res = await axios.post('https://reactshopee.herokuapp.com/cartitems/',{action,id},config);
           console.log(res.data)
       } catch (error) {
           console.log(error)

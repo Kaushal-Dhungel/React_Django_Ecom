@@ -10,7 +10,7 @@ const initialStore = {
 export const fetchDataNav = (token) => {
     return  (dispatch)=> {
 
-         axios.get('http://reactshopee.herokuapp.com/orders/',{
+         axios.get('https://reactshopee.herokuapp.com/orders/',{
             headers: {
                     "Content-Type" : "application/json",
                     Authorization : `Token ${token}`
@@ -52,7 +52,7 @@ export const updateCart = (e) => {
             };
 
             
-            axios.post('http://reactshopee.herokuapp.com/cartitems/',{action,id},config)
+            axios.post('https://reactshopee.herokuapp.com/cartitems/',{action,id},config)
 
             .then (response => {console.log(response.data)
                     dispatch({type: 'UPDATE_NAV'})}

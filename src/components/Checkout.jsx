@@ -18,7 +18,7 @@ export const Checkout = ({total_items,total_amount,token,fetchDataNav}) => {
     useEffect( () => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('http://reactshopee.herokuapp.com/cartitems/',{
+                const res = await axios.get('https://reactshopee.herokuapp.com/cartitems/',{
                     headers: {
                             "Content-Type" : "application/json",
                             Authorization : `Token ${token}`
@@ -59,7 +59,7 @@ export const Checkout = ({total_items,total_amount,token,fetchDataNav}) => {
         }
         }
 
-        axios.post('http://reactshopee.herokuapp.com/shipping/', data,config)
+        axios.post('https://reactshopee.herokuapp.com/shipping/', data,config)
 
         .then (response => {console.log("done")
                 alert("transaction successful")
