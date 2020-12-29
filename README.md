@@ -1,9 +1,14 @@
 ## An Ecommerce Site Using React And Django Rest Framework
 
+[Visit the app](https://reactshopee.netlify.app/)
+**This is the frontend of the application.** 
+**Visit the link below for the backend**
+[backend link](https://github.com/Kaushal-Dhungel/react_django_ecom_backend)
+
 As the Internet has advanced , it's usage has skyrocketed. In this modern world , companies like Amazon and Flipkart have made fortunes using 
 ecommerce. Almost every sellers out there are going online and doing their businesses. 
 So this project is inspired from the growing digitalisation in the world. 
-Thanks to Dennis Ivy (youtuber) who taught us how to make a shopping cart using Pure html, css ,js and Django. I leearned a lot from his tutorial series.
+Thanks to Dennis Ivy (youtuber) who taught me how to make a shopping cart using pure html, css ,Javascript and Django. I leearned a lot from his tutorial series.
 
 [Checkout his channel](https://www.youtube.com/c/DennisIvy)
 
@@ -20,47 +25,3 @@ Most of the frontend HTML and CSS codes are copied from the Internet. About 70% 
 3. Django Rest Framework
 4. Redux
 
-**see the products**
-![products](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/Shopping1.png)
-
-**filter the products**
-![filter](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/shop.png)
-
-**Cart Items**
-![cart](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/checkout.png)
-
-**Checkout**
-![cart](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/checkout2.png)
-
-**Product Detail**
-![cart](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/Shopping3.png)
-
-**Register**
-![cart](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/login.png)
-
-
-**Registration Required to see cart items**
-![cart](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/empty_cart.png)
-
-
-**comments**
-![comments](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/comments.png)
-
-**testimonial**
-![cart](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/shopping2.png)
-
-**admin panel**
-![admin](https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom/blob/master/public/thumbnails/admin.png)
-
-
-**Clone this Project**
-
-$git clone https://github.com/Kaushal-Dhungel/React_DjangoRest_Ecom.git
-
-**Install the node dependencies**
-### `npm install`
-
-**Install the python dependencies**
-### `pip install -r requirements.txt`
-
->Enjoy
