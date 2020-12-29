@@ -1,8 +1,10 @@
 ## An Ecommerce Site Using React And Django Rest Framework
 
 [Visit the app](https://reactshopee.netlify.app/)
+
 **This is the frontend of the application.** 
 **Visit the link below for the backend**
+
 [backend link](https://github.com/Kaushal-Dhungel/react_django_ecom_backend)
 
 As the Internet has advanced , it's usage has skyrocketed. In this modern world , companies like Amazon and Flipkart have made fortunes using 
