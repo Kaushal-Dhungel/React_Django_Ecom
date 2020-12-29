@@ -1,0 +1,435 @@
+/*-------------------- Page Home -------------------------- */
+
+.navbar-brand{
+	display: flex;
+}
+
+.navbar-brand p sup {
+	font-size: 18px;
+	color: white;
+	background: rgba(255, 0, 43, 0.562);
+	border: 1px solid rgb(185, 39, 154);
+	border-radius: 50%;
+}
+
+.navbar-brand img {
+    height: 5vh;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 35vh;
+}
+
+.info h3{
+	text-align: center;
+}
+
+/*----------------- landing ------------------------*/
+.landing {
+    margin-top: 10vh;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.l_img img{
+	width: 500px;
+}
+@media screen and (max-width: 780px) {
+
+	.landing {
+		flex-direction: column-reverse;
+		align-items: center;
+		/* justify-content: space-between; */
+	}
+	.text {
+		margin-top: 10vh;
+	}
+
+	.l_img {
+		margin-top: 10vh;
+	}
+
+	.l_img img {
+		width: 400px;
+	}
+
+	.text h2 {
+		text-align: center;
+	}
+	.text p {
+		text-align: center;
+	}
+	.text a {
+		margin-left: 35%;
+	}
+}
+  
+
+/* -------------------------------- Register------------------------------------- */
+.register_messages {
+	margin: 5vh 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.register_messages p {
+	text-align: center;
+	color: #e96443;
+	font-size: 18px;
+}
+
+.categories_profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loading_loading {
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Items, copied from Den's */
+
+
+.box-element{
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.thumbnail{
+	width: 100%;
+	height: 200px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.product{
+	border-radius: 0 0 4px 4px;
+}
+
+.bg-dark{
+	background-color: #2399a7!important;
+}
+
+#cart-icon{
+	width:25px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+#cart-total{
+	display: block;
+	text-align: center;
+	color:#fff;
+	background-color: red;
+	width: 20px;
+	height: 25px;
+	border-radius: 50%;
+	font-size: 14px;
+}
+
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+	margin-top: 10px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.row-image{
+	width: 100px;
+}
+
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+	
+
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}
+
+
+.hidden{
+	display: none!important;
+}
+
+.container {
+    margin-top: 10vh;
+}
+
+
+
+
+
+
+/*--------------------- Page Details ------------------------------------- */
+.post_detail {
+	display: flex;
+	justify-content: space-around;
+}
+
+.post_desc {
+	margin-top: 5vh;
+}
+
+.post_desc p ,.post_desc h4{
+    margin-top: 20px;
+}
+
+.post_img img {
+    height: 300px;
+}
+
+.categories {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.comment_section {
+	/* background-color: red; */
+	border-radius:20px ;
+}
+
+.comment_section p, h6 {
+	padding: 10px 10px;
+} 
+
+@media screen and (max-width: 780px) {
+	.post_detail {
+		flex-direction: column;
+	}
+
+	.post_img img {
+		width: 100%;
+	}
+
+	.comment {
+		/* margin: auto; */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* -------heading ---------- */
+.headings {
+    /* margin-top: 30vh; */
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.headings::after {
+    content: '';
+    background: red;
+    width: 90px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0%;
+    left: 47%;
+    transform: translateX(-50);
+}
+
+.head {
+    margin: 40vh 0 0 0;
+}
+@media screen and (max-width: 780px) {
+	.headings::after {
+		left:40% ;
+	}
+}
+
+/* ------ Testimonial ------- */
+
+.img-text {
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #262626;
+    color: #fff;
+    border-radius: 15px;
+
+}
+
+.img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.img-text p {
+    font-size: 14px;
+}
+
+.single-box {
+    position: relative;
+	margin-bottom: 30px;
+
+}
+
+.img-area {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 3vh;
+    left: 37%;
+    border-radius: 50%;
+
+}
+
+.img-area img {
+    width: 100%;
+}
+
+.carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -70px;
+
+}
+
+.carousel-indicators li {
+    background: #000;
+    border-radius: 50%;
+    width: 15px;
+    height: 3px;
+}
+
+.carousel-indicators .active {
+    background: black;
+}
+
+
+.footer {
+    margin: 30vh 0 10vh 0;
+    text-align: center;
+}
+
+
+
+
+
+/* --------------- login--------------- */
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+.a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.form_input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+
+	form {
+		padding: 0 10px;
+	}
+
+}
+
+/* ----------------------------------------- Logout Page -------------------------- */
+.logout {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
