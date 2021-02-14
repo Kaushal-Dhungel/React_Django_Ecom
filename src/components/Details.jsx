@@ -3,6 +3,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 
 import {updateCart} from '../redux_ecom/Reducer'
+import Summer from '../imgs/summer.jpg';
 
 const PostDetail = (props) => {
     const [item,setItem] = useState({})
@@ -99,7 +100,9 @@ const PostDetail = (props) => {
 
         <div className="post_detail">
             <div className="post_img">
-                <img src={item.imageURL} alt="detail_img" srcSet=""/>
+                {/* <img src={item.imageURL} alt="detail_img" srcSet=""/> */}
+                <img src={Summer} alt="detail_img" srcSet=""/>
+
             </div>
             <div className="post_desc">
                 <h3> {item.name} </h3>

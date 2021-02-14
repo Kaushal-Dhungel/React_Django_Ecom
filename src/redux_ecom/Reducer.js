@@ -1,4 +1,5 @@
 import axios from 'axios'
+import swal from 'sweetalert'
 
 const initialStore = {
     cart_items: [],
@@ -64,7 +65,7 @@ export const updateCart = (e) => {
         }
 
         else {
-            alert("you need to register before performing this action")
+            swal("Login Required!", "Please Register Before Performing This Action", "warning");
         }
 
 

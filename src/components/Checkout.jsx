@@ -7,6 +7,7 @@ import {connect} from 'react-redux';
 
 import { useHistory } from "react-router-dom";
 import {fetchDataNav} from '../redux_ecom/Reducer'
+import swal from 'sweetalert'
 
 
 export const Checkout = ({total_items,total_amount,token,fetchDataNav}) => {
@@ -62,7 +63,7 @@ export const Checkout = ({total_items,total_amount,token,fetchDataNav}) => {
         axios.post('https://reactshopee.herokuapp.com/shipping/', data,config)
 
         .then (response => {console.log("done")
-                alert("transaction successful")
+                swal("Done", "Transaction Successful", "success");
                 fetchDataNav(token);
                 history.push('/')
                 }

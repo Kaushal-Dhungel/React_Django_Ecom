@@ -29,7 +29,9 @@
 }
 
 /*----------------- landing ------------------------*/
+
 .landing {
+	background-image: linear-gradient(to right,white, rgb(202, 214, 219),white);
     margin-top: 10vh;
     height: 80vh;
     display: flex;
@@ -37,13 +39,14 @@
     align-items: center;
 }
 .l_img img{
-	width: 500px;
+	width: 400px;
 }
 @media screen and (max-width: 780px) {
 
 	.landing {
 		flex-direction: column-reverse;
 		align-items: center;
+		height: 100vh;
 		/* justify-content: space-between; */
 	}
 	.text {
@@ -55,7 +58,7 @@
 	}
 
 	.l_img img {
-		width: 400px;
+		width: 230px;
 	}
 
 	.text h2 {
@@ -69,6 +72,114 @@
 	}
 }
   
+
+/* -------------------------------- Below Landing ---------------------------------------- */
+.belowLanding {
+	/* margin-top: 30vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 100%;
+	height: 100%; */
+}
+
+.team-area{
+	display: flex;
+	flex-direction: row;
+	/* width: 90%; */
+	/* justify-content: space-around; */
+	gap: 3rem;
+}
+
+.single-team {
+	width: 360px;
+	height: 400px;
+	padding: 24px;
+	background: #ececec;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	transition: .6s ease-out;
+	/* box-shadow: 0 10px 10px rgba(0,0,0,0.5); */
+}
+.single-team:hover{
+	transform: translateY(15px);
+}
+
+.single-team:hover:before{
+	opacity: 1;
+
+}
+
+.single-team:hover .team-text {
+	opacity: 1;
+	transform: translateY(0);
+}
+.single-team:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top ,#000, transparent);
+	z-index: 2;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.single-team img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+.single-team .team-text {
+	position: relative;
+	z-index: 3;
+	color: #fff;
+	opacity: 0;
+	transform: translateY(60px);
+	transition: 0.5s;
+}
+
+.team-text h2 {
+	margin: 0;
+}
+
+
+@media screen and (max-width: 780px) {
+	.team-area{
+		flex-direction: column;
+	}
+}
+
+/* --------------------------------- Exclusive --------------------------------------- */
+.Ewrapper {
+	height: 60vh;
+	margin-top: 50vh;
+	background-image: linear-gradient(to right,rgb(118, 145, 142),rgb(193, 202, 199));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.exclusive {
+	display: flex;
+	flex-direction: row;
+	gap: 6rem;
+}
+.e_img img {
+	height: 300px;
+}
+
+.text_section {
+	margin-top: 10vh;
+}
 
 /* -------------------------------- Register------------------------------------- */
 .register_messages {
@@ -204,12 +315,13 @@
 /*--------------------- Page Details ------------------------------------- */
 .post_detail {
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: space-around; */
+	gap: 3rem;
 }
 
-.post_desc {
+/* .post_desc {
 	margin-top: 5vh;
-}
+} */
 
 .post_desc p ,.post_desc h4{
     margin-top: 20px;

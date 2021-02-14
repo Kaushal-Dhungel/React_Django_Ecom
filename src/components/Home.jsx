@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import {Link } from "react-router-dom";
-import LandingImg from '../imgs/shop.png'
+import LandingImg from '../imgs/one.png';
+import Summer from '../imgs/summer.jpg';
+import Winter from '../imgs/winter.jpg';
+import Evergreen from '../imgs/evergreen.jpg';
+import shoes from '../imgs/shoes.png';
+
 import { Headings } from './Components';
 import axios from 'axios';
 
@@ -10,7 +15,7 @@ import {updateCart} from '../redux_ecom/Reducer'
 
 const Landing = ({classname,img}) => {
     return(
-        <>
+        <div className = "landing_wrapper">
         <div className="container">
         <div className={classname}>
             <div className="text">
@@ -21,17 +26,76 @@ const Landing = ({classname,img}) => {
                     Lorem ipsum dolor sit amet consectetur adipisicing. <br/>
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <Link className="btn btn-outline-primary" to={'/shop'}>Get Started</Link>
+                <Link className="btn btn-outline-secondary" to={'/shop'}>Get Started</Link>
             </div>
             <div className="l_img">
                 <img src={img} alt="landing_img" />
             </div>
         </div>
         </div>
-        </>
+        </div>
     )
 }
 
+const Belowlanding = () => {
+    return (
+        <div className = "belowLanding ">
+            <div className="team-area">
+
+                <div className="single-team">
+                    <img src={Summer} alt=""/>
+                    <div className="team-text">
+                        <h2>Summer</h2>
+                        <p> Look Cool In Summer</p>
+                        <Link className="btn btn-outline-secondary" to={'/shop'}>Buy Now</Link>
+
+                    </div>
+                </div>
+
+                <div className="single-team">
+                    <img src={Winter} alt=""/>
+                    <div className="team-text">
+                        <h2>Winter</h2>
+                        <p> Make Winter More Stylish</p>
+                        <Link className="btn btn-outline-secondary" to={'/shop'}>Buy Now</Link>
+
+                    </div>
+                </div>
+
+                <div className="single-team">
+                    <img src={Evergreen} alt=""/>
+                    <div className="team-text">
+                        <h2>Evergreen</h2>
+                        <p> Wear Any Time Of The Year</p>
+                        <Link className="btn btn-outline-secondary" to={'/shop'}>Buy Now</Link>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+const Exclusive = () => {
+    return (
+        <>
+        <div className="Ewrapper">
+            <div className="exclusive">
+                <div className="e_img">
+                    <img src={shoes} alt="" />
+                </div>
+                <div className="text_section">
+                    <h2> Classy Summer Wears </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illo! </p>
+                    <Link className="btn btn-outline-secondary" to={'/shop'}>Buy Now</Link>
+
+                </div>
+            </div>
+        </div>
+        </>
+    )
+}
 
 export const Items = ({token,isAuthenticated,updateCart}) => {
     const[items,setItems] = useState([]);
@@ -211,9 +275,12 @@ export const Home = () => {
         img = {LandingImg}
         />
 
+        <Headings title = "Categories" />
+        <Belowlanding />
         <Headings title = "Our Items" />
         <ConnectItems />
         
+        <Exclusive />
         <Headings title = "What People Are Saying" />
         <Testi />
         </>
