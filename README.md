@@ -10,7 +10,7 @@
 As the Internet has advanced , it's usage has skyrocketed. In this modern world , companies like Amazon and Flipkart have made fortunes using 
 ecommerce. Almost every sellers out there are going online and doing their businesses. 
 So this project is inspired from the growing digitalisation in the world. 
-Thanks to Dennis Ivy (youtuber) who taught me how to make a shopping cart using pure html, css ,Javascript and Django. I leearned a lot from his tutorial series.
+Thanks to Dennis Ivy (youtuber) for teaching how to make a shopping cart using pure html, css ,Javascript and Django. I leearned a lot from his tutorial series.
 
 [Checkout his channel](https://www.youtube.com/c/DennisIvy)
 
